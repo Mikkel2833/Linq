@@ -64,6 +64,12 @@ namespace Linq
             //}
             cmbCustomer.DataContext = customers;
         }
+
+        private void cmbCustomer_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Customer theCustomer = (Customer)cmbCustomer.SelectedItem;
+            MessageBox.Show(theCustomer.CustName);
+        }
            
     }
 }
