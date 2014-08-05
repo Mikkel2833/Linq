@@ -51,12 +51,12 @@ namespace Linq
 
         public void fillListCustomer()
         {
-            //var customers = from c in OrderDbContext.Customers select c;
-            var customers = from c in OrderDbContext.Customers select new 
-            {
-                CustomerNumber = c.CustNo,
-                CustomerName = c.CustName
-            };
+            var customers = from c in OrderDbContext.Customers select c;
+            //var customers = from c in OrderDbContext.Customers select new 
+            //{
+            //    CustomerNumber = c.CustNo,
+            //    CustomerName = c.CustName
+            //};
             //foreach(var cust in customers)
             //{
             //    MessageBox.Show(cust.CustomerName);

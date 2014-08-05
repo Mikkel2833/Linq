@@ -339,10 +339,10 @@ namespace Linq
     partial void OnB2BChanged();
     #endregion
 
-    public override string ToString()
-    {
-        return CustNo +  " - " + CustName;
-    }
+    //public override string ToString()
+    //{
+    //    return CustNo +  " - " + CustName;
+    //}
 		
 		public Customer()
 		{

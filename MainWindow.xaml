@@ -4,7 +4,16 @@
         Title="MainWindow" Height="350" Width="525">
     <StackPanel>
         <ComboBox Name="cmbCustomer" ItemsSource="{Binding}">
-            
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding CustNo}"/>
+                        <TextBlock Text=" "/>
+                        <TextBlock Text="{Binding CustName}"/>
+                        <CheckBox IsChecked="{Binding B2B}" Margin="5"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
         </ComboBox> 
     </StackPanel>
 </Window>
